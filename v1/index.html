@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pro Auto Repair | Honest Auto Repair in Raleigh, NC</title>
+  <meta name="description" content="Honest diagnostics, transparent pricing, and quick turnarounds for Raleigh drivers. Call (919) 803-5253 for Pro Auto Repair.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bby-blue: #0046be;
+      --bby-blue-dark: #002d7f;
+      --bby-blue-soft: #e6f0ff;
+      --accent-green: #12b981;
+      --accent-yellow: #facc15;
+      --bg-dark: #020617;
+      --text-main: #0f172a;
+      --text-subtle: #64748b;
+      --card-bg: #ffffff;
+      --border-soft: #e2e8f0;
+      --radius-lg: 18px;
+      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.18);
+      --max-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text-main);
+      background: radial-gradient(circle at top, #0b1120 0, #020617 55%, #020617 100%);
+      min-height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      background: #0b1120;
+      color: #e5e7eb;
+      font-size: 0.85rem;
+    }
+
+    .top-bar-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .top-bar-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 0.75rem;
+    }
+
+    .top-bar-pill span.badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 999px;
+      background: var(--accent-yellow);
+      color: #111827;
+      font-weight: 700;
+      font-size: 0.7rem;
+    }
+
+    header.site-header {
+      background: linear-gradient(135deg, var(--bby-blue-dark), #020617);
+      color: #f9fafb;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0.9rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-block {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .logo-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: radial-gradient(circle at 20% 10%, #38bdf8 0, #0ea5e9 24%, #020617 100%);
+      border: 1px solid rgba(148, 163, 184, 0.75);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      box-shadow: 0 12px 25px rgba(15, 23, 42, 0.45);
+    }
+
+    .logo-text-main {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .logo-text-sub {
+      font-size: 0.75rem;
+      color: #cbd5f5;
+    }
+
+    nav.primary-nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+
+    nav.primary-nav a {
+      color: #e5e7eb;
+      opacity: 0.9;
+    }
+
+    nav.primary-nav a:hover {
+      opacity: 1;
+    }
+
+    .nav-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.45rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent);
+    }
+
+    .nav-phone strong {
+      color: #facc15;
+    }
+
+    .hero {
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 55%),
+                  radial-gradient(circle at bottom, rgba(37, 99, 235, 0.28), transparent 55%);
+      color: #f9fafb;
+      padding: 1.8rem 1rem 2.75rem;
+    }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 2.25rem;
+      align-items: center;
+    }
+
+    @media (max-width: 880px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #bfdbfe;
+      margin-bottom: 0.4rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero-kicker span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent-green);
+      box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.25);
+    }
+
+    .hero-title {
+      font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+      font-size: clamp(2.1rem, 3vw, 2.7rem);
+      line-height: 1.15;
+      margin: 0.1rem 0 0.75rem;
+    }
+
+    .hero-title span.highlight {
+      color: #bfdbfe;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      max-width: 32rem;
+      color: #e5e7eb;
+      line-height: 1.5;
+    }
+
+    .hero-subtitle strong {
+      color: #facc15;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      margin-top: 1.3rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #facc15, #fde047);
+      color: #111827;
+      border-radius: 999px;
+      padding: 0.7rem 1.4rem;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      cursor: pointer;
+      box-shadow: 0 12px 25px rgba(15, 23, 42, 0.5);
+      text-decoration: none;
+    }
+
+    .btn-primary span.chevron {
+      font-size: 1rem;
+      transform: translateY(1px);
+    }
+
+    .btn-ghost {
+      border-radius: 999px;
+      padding: 0.7rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.8);
+      font-size: 0.9rem;
+      color: #e5e7eb;
+      background: rgba(15, 23, 42, 0.6);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .hero-trust-row {
+      margin-top: 1.4rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.1rem;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #cbd5f5;
+    }
+
+    .hero-trust-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.8rem;
+      background: rgba(15, 23, 42, 0.75);
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .hero-rating {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.2rem;
+    }
+
+    .hero-rating strong {
+      font-size: 1rem;
+    }
+
+    .hero-right-card {
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.4), rgba(2, 6, 23, 0.9));
+      border-radius: 24px;
+      border: 1px solid rgba(191, 219, 254, 0.35);
+      padding: 1.1rem 1.2rem 1.3rem;
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(14px);
+    }
+
+    .hero-right-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero-right-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    .hero-right-badge {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(22, 163, 74, 0.15);
+      color: #bbf7d0;
+      border: 1px solid rgba(52, 211, 153, 0.6);
+    }
+
+    .hero-right-grid {
+      margin-top: 0.3rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .hero-right-item {
+      padding: 0.55rem 0.65rem;
+      border-radius: 12px;
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    .hero-right-item span.label {
+      font-size: 0.72rem;
+      color: #9ca3af;
+      display: block;
+      margin-bottom: 0.12rem;
+    }
+
+    .hero-right-item strong {
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .hero-right-footer {
+      margin-top: 0.75rem;
+      font-size: 0.78rem;
+      color: #cbd5f5;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    main {
+      flex: 1;
+      background: radial-gradient(circle at top, rgba(15, 23, 42, 0.4), transparent 52%);
+      padding: 0 1rem 3rem;
+    }
+
+    .main-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      margin-top: -1.4rem;
+    }
+
+    .band {
+      border-radius: 18px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.95), rgba(15, 118, 110, 0.9));
+      color: #e5e7eb;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.7);
+    }
+
+    .band-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+    }
+
+    .band-tag {
+      background: rgba(250, 204, 21, 0.15);
+      border-radius: 999px;
+      padding: 0.23rem 0.6rem;
+      border: 1px dashed rgba(250, 250, 250, 0.45);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #facc15;
+      font-weight: 600;
+    }
+
+    .band-right {
+      font-size: 0.8rem;
+      color: #bfdbfe;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .section {
+      margin-bottom: 2.2rem;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #e5e7eb;
+    }
+
+    .section-subtitle {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      max-width: 28rem;
+    }
+
+    .link-inline {
+      font-size: 0.8rem;
+      color: #bfdbfe;
+    }
+
+    .link-inline span.chevron {
+      font-size: 0.9rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    @media (max-width: 980px) {
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .card-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .card {
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.92));
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      padding: 0.95rem 0.95rem 1rem;
+      color: #e5e7eb;
+      box-shadow: 0 18px 38px rgba(15, 23, 42, 0.75);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      align-items: baseline;
+      margin-bottom: 0.35rem;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .card-pill {
+      font-size: 0.7rem;
+      border-radius: 999px;
+      padding: 0.2rem 0.6rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #bfdbfe;
+    }
+
+    .card-body {
+      font-size: 0.8rem;
+      color: #cbd5f5;
+      margin-bottom: 0.6rem;
+      line-height: 1.5;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #9ca3af;
+      align-items: center;
+    }
+
+    .badge-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      border-radius: 999px;
+      padding: 0.12rem 0.5rem;
+      border: 1px solid rgba(148, 163, 184, 0.7);
+      background: rgba(15, 23, 42, 0.9);
+      color: #e5e7eb;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.4rem;
+    }
+
+    @media (max-width: 900px) {
+      .two-col {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .panel {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      padding: 1rem 1rem 1.15rem;
+      box-shadow: 0 16px 32px rgba(15, 23, 42, 0.7);
+      color: #e5e7eb;
+      font-size: 0.85rem;
+    }
+
+    .panel-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .panel-sub {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      margin-bottom: 0.8rem;
+    }
+
+    .list-check {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+    }
+
+    .list-check li::before {
+      content: "✔";
+      color: #4ade80;
+      margin-right: 0.4rem;
+      font-size: 0.75rem;
+    }
+
+    .testimonial {
+      font-size: 0.82rem;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    .testimonial-name {
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: #bfdbfe;
+    }
+
+    .faq-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      color: #cbd5f5;
+    }
+
+    .faq-q {
+      font-weight: 600;
+      color: #e5e7eb;
+      margin-bottom: 0.1rem;
+    }
+
+    footer.site-footer {
+      border-top: 1px solid rgba(30, 64, 175, 0.6);
+      background: #020617;
+      color: #9ca3af;
+      font-size: 0.78rem;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 1.2rem 1rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.9rem;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+    }
+
+    .footer-links a {
+      color: #9ca3af;
+    }
+
+    .footer-links a:hover {
+      color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-pill">
+        <span class="badge">RDU</span>
+        <span>Serving Raleigh, Cary, and surrounding areas.</span>
+      </div>
+      <div style="font-size:0.8rem;">
+        Same-day appointments available • <strong>Drop-off &amp; wait-while-we-work options</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo-block">
+        <div class="logo-mark">
+          <span>PR</span>
+        </div>
+        <div>
+          <div class="logo-text-main">Pro Auto Repair</div>
+          <div class="logo-text-sub">Diagnostics • Brakes • Maintenance</div>
+        </div>
+      </div>
+      <nav class="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#specials">Specials</a>
+        <a href="#faqs">FAQ</a>
+        <a href="#contact">Directions</a>
+        <div class="nav-phone">
+          <span>Call:</span>
+          <strong>(919) 803-5253</strong>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-kicker">
+          <span class="dot"></span>
+          <span>Family-Owned • ASE-Certified</span>
+        </div>
+        <h1 class="hero-title">
+          Keep your car <span class="highlight">road-ready</span> with honest auto repair in Raleigh.
+        </h1>
+        <p class="hero-subtitle">
+          From check-engine lights to brake jobs and routine maintenance, <strong>Pro Auto Repair</strong> keeps you
+          on the road with clear explanations, no-pressure recommendations, and fast turnaround times.
+        </p>
+
+        <div class="hero-actions">
+          <a href="tel:19198035253" class="btn-primary">
+            <span>Call for a quick estimate</span>
+            <span class="chevron">›</span>
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <span>View hours &amp; directions</span>
+          </a>
+        </div>
+
+        <div class="hero-trust-row">
+          <div class="hero-trust-pill">
+            <span class="hero-rating"><strong>4.9</strong> / 5</span>
+            <span>Local customer reviews</span>
+          </div>
+          <span>Up-front pricing • Digital inspections • Warranty on most repairs</span>
+        </div>
+      </div>
+
+      <aside class="hero-right-card" aria-label="Quick service snapshot">
+        <div class="hero-right-header">
+          <div>
+            <div class="hero-right-title">Today at Pro Auto Repair</div>
+            <div style="font-size:0.75rem;color:#bfdbfe;margin-top:0.15rem;">
+              Average wait time for oil changes: <strong>~45 minutes</strong>
+            </div>
+          </div>
+          <div class="hero-right-badge">Walk-ins welcome</div>
+        </div>
+
+        <div class="hero-right-grid">
+          <div class="hero-right-item">
+            <span class="label">First-time customer?</span>
+            <strong>$25 off</strong>
+          </div>
+          <div class="hero-right-item">
+            <span class="label">Diagnostics</span>
+            <strong>from $79</strong>
+          </div>
+          <div class="hero-right-item">
+            <span class="label">Brake service</span>
+            <strong>same-day*</strong>
+          </div>
+          <div class="hero-right-item">
+            <span class="label">Loaner vehicles</span>
+            <strong>by appointment</strong>
+          </div>
+        </div>
+
+        <div class="hero-right-footer">
+          <span>*On most vehicles when dropped off before 10 AM.</span>
+          <span style="white-space:nowrap;">Call <strong>(919) 803-5253</strong></span>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <div class="main-inner">
+
+      <!-- Specials Band -->
+      <section id="specials" class="band">
+        <div class="band-left">
+          <span class="band-tag">Today’s service specials</span>
+          <span>Bundle <strong>oil change + tire rotation</strong> and save 15% on labor.</span>
+        </div>
+        <div class="band-right">
+          Mention code <strong>PRO15</strong> when you call.
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="section">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Popular services</div>
+            <div class="section-subtitle">
+              Full-service repair shop for imports, domestics, and light trucks. We’ll show you what we find before
+              we do any work.
+            </div>
+          </div>
+          <a href="tel:19198035253" class="link-inline">
+            Talk through your issue <span class="chevron">›</span>
+          </a>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Diagnostics &amp; check-engine lights</div>
+              <div class="card-pill">Most cars</div>
+            </div>
+            <p class="card-body">
+              Advanced scan tools plus hands-on testing so you get a real answer, not just a code printout.
+              We explain your options in plain English.
+            </p>
+            <div class="card-meta">
+              <span>From $79</span>
+              <span>Typically same-day</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Brake service &amp; safety checks</div>
+              <div class="card-pill">Noise &amp; vibration fixes</div>
+            </div>
+            <p class="card-body">
+              Pad and rotor replacement, brake fluid flushes, and full brake safety inspections so you can stop
+              confidently in Raleigh traffic.
+            </p>
+            <div class="card-meta">
+              <span>Factory-grade parts</span>
+              <span>Warranty included</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Oil changes &amp; maintenance</div>
+              <div class="card-pill">Mileage-based plans</div>
+            </div>
+            <p class="card-body">
+              Synthetic and high-mileage oil options, filters, and full multi-point inspection every visit.
+              Great for commuters and rideshare drivers.
+            </p>
+            <div class="card-meta">
+              <span>From $59</span>
+              <span>~45 min average</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Suspension &amp; steering</div>
+              <div class="card-pill">Wobbles &amp; clunks</div>
+            </div>
+            <p class="card-body">
+              Shocks, struts, control arms, and alignments to fix uneven tire wear, pulling, and rough rides.
+            </p>
+            <div class="card-meta">
+              <span>Road-test included</span>
+              <span>Alignments available</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Batteries, starters &amp; charging</div>
+              <div class="card-pill">No-start issues</div>
+            </div>
+            <p class="card-body">
+              Testing and replacement for batteries, alternators, and starters, so you’re not stranded at work
+              or in a parking lot.
+            </p>
+            <div class="card-meta">
+              <span>Free battery test</span>
+              <span>Most in stock</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title">Air conditioning &amp; heating</div>
+              <div class="card-pill">Beat the NC heat</div>
+            </div>
+            <p class="card-body">
+              A/C performance checks, refrigerant recharge, leak repair, and heater fixes to keep your cabin
+              comfortable year-round.
+            </p>
+            <div class="card-meta">
+              <span>Summer-ready</span>
+              <span>Comfort guarantee</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Why Us / Testimonials -->
+      <section id="why-us" class="section">
+        <div class="two-col">
+          <div class="panel">
+            <div class="panel-title">Why drivers in Raleigh trust Pro Auto Repair</div>
+            <div class="panel-sub">
+              Not all shops are created equal. Here’s how we keep things clear, honest, and stress-free.
+            </div>
+            <ul class="list-check">
+              <li>No surprise bills — estimates approved before we turn a wrench.</li>
+              <li>Digital inspection photos/videos sent straight to your phone.</li>
+              <li>OEM-quality or better parts on most repairs.</li>
+              <li>Up-front timelines so you know when your car will be ready.</li>
+              <li>Comfortable waiting area with Wi-Fi and coffee for quick jobs.</li>
+            </ul>
+            <div style="margin-top:0.9rem;">
+              <div style="font-size:0.78rem;color:#a5b4fc;">
+                Backed by <strong>12-month / 12,000-mile warranty</strong> on most repairs.
+              </div>
+              <div class="badge-list" style="margin-top:0.4rem;">
+                <span class="badge">ASE-Certified Techs</span>
+                <span class="badge">Locally Owned</span>
+                <span class="badge">Dealer Alternative</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-title">What our customers are saying</div>
+            <div class="testimonial">
+              “I was sure they were going to upsell me, but they actually talked me <em>out</em> of work that could wait.
+              Super clear, super professional, and my car drives better than it has in years.”
+              <div class="testimonial-name">— Jordan M., Raleigh</div>
+            </div>
+            <hr style="border:none;border-top:1px solid rgba(51,65,85,0.9);margin:0.8rem 0;">
+            <div class="testimonial">
+              “They squeezed me in for a same-day brake job when another shop canceled. Transparent about pricing and
+              showed me the worn parts.”
+              <div class="testimonial-name">— Alexis T., Cary</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ / Contact -->
+      <section id="faqs" class="section">
+        <div class="two-col">
+          <div class="panel">
+            <div class="panel-title">Frequently asked questions</div>
+            <ul class="faq-list">
+              <li>
+                <div class="faq-q">Do I need an appointment?</div>
+                <div>Appointments help us plan your visit, but we do accept walk-ins for many services. Call so we can hold a spot for you.</div>
+              </li>
+              <li>
+                <div class="faq-q">Can you work with extended warranties?</div>
+                <div>Yes. Bring your warranty information and we’ll help file claims where applicable.</div>
+              </li>
+              <li>
+                <div class="faq-q">Do you service European and luxury vehicles?</div>
+                <div>We service most makes and models, including BMW, Mercedes, Audi, Lexus, and more. Call to confirm your vehicle.</div>
+              </li>
+              <li>
+                <div class="faq-q">What payment methods do you accept?</div>
+                <div>Major credit/debit cards, cash, and most app-based payments. Financing options available for larger repairs.</div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="contact" class="panel">
+            <div class="panel-title">Location, hours &amp; contact</div>
+            <div class="panel-sub">
+              Based in Raleigh, NC and serving surrounding areas. Call or tap for turn-by-turn directions.
+            </div>
+            <div style="font-size:0.84rem;margin-bottom:0.5rem;">
+              <strong>Phone:</strong> <a href="tel:19198035253">(919) 803-5253</a><br>
+              <strong>Email:</strong> <a href="mailto:info@proautorepair.com">info@proautorepair.com</a><br>
+            </div>
+            <div style="font-size:0.8rem;color:#cbd5f5;margin-bottom:0.6rem;">
+              <strong>Hours:</strong><br>
+              Mon–Fri: 8:00 AM – 6:00 PM<br>
+              Sat: 9:00 AM – 2:00 PM<br>
+              Sun: Closed
+            </div>
+            <div style="font-size:0.8rem;color:#cbd5f5;margin-bottom:0.5rem;">
+              <strong>Address:</strong><br>
+              1234 Example Auto Lane<br>
+              Raleigh, NC 27601
+            </div>
+            <a href="https://maps.google.com" class="btn-ghost" style="margin-top:0.3rem;display:inline-flex;">
+              Open in Maps
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        © <span id="year"></span> Pro Auto Repair. All rights reserved.
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <span>•</span>
+        <a href="#">Terms</a>
+        <span>•</span>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // Set current year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
