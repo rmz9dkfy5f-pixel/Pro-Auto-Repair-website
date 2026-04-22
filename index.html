@@ -1,15 +1,254 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pro Auto Repair — Versions</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro Auto Repair | Design Hub</title>
+  <meta name="description" content="GitHub Pages design hub for Pro Auto Repair with separate demo pages for v0.0.1, v1.0.0, and v2.0.0." />
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-  <h1>Pro Auto Repair — Versions</h1>
-  <ul>
-    <li><a href="./v2/">Original Full Site (v2)</a></li>
-    <li><a href="./v1/">Minimal Version (v1)</a></li>
-  </ul>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html"><div class="brand-mark">🔧</div><span><b>PRO</b> AUTO REPAIR</span></a>
+      <nav>
+        <a href="#overview">Overview</a>
+        <a href="#versions">Versions</a>
+        <a href="#compare">Compare</a>
+        <a href="#launch">Launch</a>
+      </nav>
+      <a class="button secondary" href="#launch">Choose Build Path</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <div class="tag">🚗 GitHub Pages ready • infographic-style launch hub</div>
+          <h1>Pro Auto Repair<br><span class="accent">Design Version Hub</span></h1>
+          <p class="lead">A single index page that visually compares your three website directions and links to standalone demos for <strong>v0.0.1</strong>, <strong>v1.0.0</strong>, and <strong>v2.0.0</strong>. Built to live directly in the root of a GitHub Pages repository.</p>
+          <div class="hero-stats">
+            <div class="kpi"><strong>3 linked demos</strong><span>each version opens as its own page</span></div>
+            <div class="kpi"><strong>Infographic overview</strong><span>comparison cards + at-a-glance scoring</span></div>
+            <div class="kpi"><strong>GitHub-friendly</strong><span>static HTML/CSS only, no build step</span></div>
+          </div>
+          <div class="hero-actions">
+            <a class="button primary" href="#versions">Explore Versions</a>
+            <a class="button secondary" href="assets/design-reference.png">Open Design Reference</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="dashboard">
+            <div class="visual-badge">Landing page + version selector</div>
+            <div class="visual-meter"><div><b>3 PATHS</b><span>one roadmap</span></div></div>
+            <div style="position:absolute;left:22px;right:22px;top:86px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;">
+              <div class="panel" style="padding:14px;border-radius:20px;background:rgba(255,255,255,.04);"><strong>v0.0.1</strong><br><span class="muted small">Simple foundation</span></div>
+              <div class="panel" style="padding:14px;border-radius:20px;background:rgba(47,123,255,.12);"><strong>v1.0.0</strong><br><span class="muted small">Modern growth site</span></div>
+              <div class="panel" style="padding:14px;border-radius:20px;background:rgba(255,123,27,.12);"><strong>v2.0.0</strong><br><span class="muted small">Premium future-ready</span></div>
+            </div>
+            <div class="car-stage"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="versions">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Three design directions, one launch hub</h2>
+            <p>Each card acts like an infographic summary and links to a full demo page so stakeholders can compare style, scope, and recommended use cases.</p>
+          </div>
+        </div>
+
+        <div class="versions">
+          <article class="version-card v0">
+            <div class="version-top">
+              <div class="version-badge">v0.0.1</div>
+              <div class="version-visual">
+                <div class="garage"></div>
+                <div class="sign">AUTO REPAIR</div>
+                <div class="car"></div>
+                <div class="badge-float">KEEP IT<br/>SIMPLE</div>
+              </div>
+            </div>
+            <div class="version-body">
+              <div class="feature-block">
+                <div class="label">Look & feel</div>
+                <div class="copy">Traditional, approachable, and trust-first. Best for a small shop launching a clean web presence fast.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Best for</div>
+                <div class="copy">Independent repair shops and service businesses that want a lightweight starter site.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Key features</div>
+                <ul class="features">
+                  <li><span>Essential services & contact info</span><span>✔</span></li>
+                  <li><span>Basic hours, map, and phone CTA</span><span>✔</span></li>
+                  <li><span>Trust badges and simple services list</span><span>✔</span></li>
+                  <li><span>Fastest setup / easiest maintenance</span><span>✔</span></li>
+                </ul>
+              </div>
+              <div class="meta">
+                <div><strong>Pages</strong><span>5–8</span></div>
+                <div><strong>Setup</strong><span>1–2 days</span></div>
+                <div><strong>Upkeep</strong><span>Low</span></div>
+              </div>
+              <a class="button gray" href="v0.0.1/index.html">Open v0.0.1 Demo →</a>
+            </div>
+          </article>
+
+          <article class="version-card v1">
+            <div class="version-top">
+              <div class="version-badge">v1.0.0</div>
+              <div class="version-visual">
+                <div class="garage"></div>
+                <div class="sign">CUSTOMER-FIRST</div>
+                <div class="car"></div>
+                <div class="badge-float">GROW YOUR<br/>BUSINESS</div>
+              </div>
+            </div>
+            <div class="version-body">
+              <div class="feature-block">
+                <div class="label">Look & feel</div>
+                <div class="copy">Modern, polished, and easier to navigate. Adds stronger hierarchy, more conversion points, and richer service storytelling.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Best for</div>
+                <div class="copy">Growing shops that want a more professional web presence and better customer engagement.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Key features</div>
+                <ul class="features">
+                  <li><span>Online booking CTA flow</span><span>✔</span></li>
+                  <li><span>Packages, testimonials, and FAQs</span><span>✔</span></li>
+                  <li><span>Responsive design with stronger visual polish</span><span>✔</span></li>
+                  <li><span>More content depth without complexity overload</span><span>✔</span></li>
+                </ul>
+              </div>
+              <div class="meta">
+                <div><strong>Pages</strong><span>10–15</span></div>
+                <div><strong>Setup</strong><span>3–5 days</span></div>
+                <div><strong>Upkeep</strong><span>Medium</span></div>
+              </div>
+              <a class="button primary" href="v1.0.0/index.html">Open v1.0.0 Demo →</a>
+            </div>
+          </article>
+
+          <article class="version-card v2">
+            <div class="version-top">
+              <div class="version-badge">v2.0.0</div>
+              <div class="version-visual">
+                <div class="garage"></div>
+                <div class="sign">PREMIUM / IMMERSIVE</div>
+                <div class="car"></div>
+                <div class="badge-float">FUTURE<br/>READY</div>
+              </div>
+            </div>
+            <div class="version-body">
+              <div class="feature-block">
+                <div class="label">Look & feel</div>
+                <div class="copy">Premium, high-contrast, and tech-forward. Designed to feel like the leading-edge version of the brand.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Best for</div>
+                <div class="copy">Established shops that want a flagship experience with more advanced trust, features, and polish.</div>
+              </div>
+              <div class="feature-block">
+                <div class="label">Key features</div>
+                <ul class="features">
+                  <li><span>Premium storytelling sections</span><span>✔</span></li>
+                  <li><span>Interactive-style dashboard panels</span><span>✔</span></li>
+                  <li><span>Member portal / status concepts / analytics</span><span>✔</span></li>
+                  <li><span>Strongest branding and deepest feature path</span><span>✔</span></li>
+                </ul>
+              </div>
+              <div class="meta">
+                <div><strong>Pages</strong><span>15+</span></div>
+                <div><strong>Setup</strong><span>1–2 weeks</span></div>
+                <div><strong>Upkeep</strong><span>High</span></div>
+              </div>
+              <a class="button orange" href="v2.0.0/index.html">Open v2.0.0 Demo →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="container comparison">
+        <div class="glance">
+          <div class="tag">At a glance</div>
+          <h2 style="margin:16px 0 10px">Compare the three paths side by side</h2>
+          <p class="muted">Use this summary to decide whether you want simplicity, balanced growth, or a premium future-facing experience.</p>
+        </div>
+
+        <div class="score-table">
+          <div class="score-head">Criteria</div>
+          <div class="score-head v0">v0.0.1</div>
+          <div class="score-head v1">v1.0.0</div>
+          <div class="score-head v2">v2.0.0</div>
+
+          <div><div class="metric">Simplicity <small>ease of setup</small></div></div>
+          <div><div class="dots"><span class="dot fill-v0"></span><span class="dot fill-v0"></span><span class="dot fill-v0"></span><span class="dot fill-v0"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+
+          <div><div class="metric">Branding strength <small>visual polish</small></div></div>
+          <div><div class="dots"><span class="dot fill-v0"></span><span class="dot fill-v0"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span></div></div>
+
+          <div><div class="metric">Customer engagement <small>trust + conversion</small></div></div>
+          <div><div class="dots"><span class="dot fill-v0"></span><span class="dot fill-v0"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span></div></div>
+
+          <div><div class="metric">Feature depth <small>tools + capability</small></div></div>
+          <div><div class="dots"><span class="dot fill-v0"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot fill-v1"></span><span class="dot"></span><span class="dot"></span></div></div>
+          <div><div class="dots"><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span><span class="dot fill-v2"></span></div></div>
+        </div>
+
+        <aside class="roadmap">
+          <div class="tag">Progression roadmap</div>
+          <div class="roadmap-line">
+            <div class="node n1"></div>
+            <div class="node n2"></div>
+            <div class="node n3"></div>
+          </div>
+          <p class="muted">Start with a lightweight launch, upgrade to a stronger customer experience, and scale toward a flagship premium version when you're ready.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="launch">
+      <div class="container cta-band">
+        <div class="cta-copy">
+          <div class="tag">Choose your build path</div>
+          <h3>Open the version you want to review</h3>
+          <p>This hub now links to three separate demo pages, each with its own style direction.</p>
+        </div>
+        <a class="cta-link gray" href="v0.0.1/index.html">Build v0.0.1<small>Keep it simple</small></a>
+        <a class="cta-link blue" href="v1.0.0/index.html">Build v1.0.0<small>Grow your business</small></a>
+        <a class="cta-link orange" href="v2.0.0/index.html">Build v2.0.0<small>Lead the future</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="list-inline">
+        <span>Designed for GitHub Pages</span>
+        <span>•</span>
+        <span>Static HTML/CSS</span>
+        <span>•</span>
+        <span>SEO ready foundation</span>
+      </div>
+      <div>© 2025 Pro Auto Repair</div>
+    </div>
+  </footer>
 </body>
 </html>
