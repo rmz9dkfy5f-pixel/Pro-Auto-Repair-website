@@ -1,0 +1,159 @@
+{
+  "active_profile": "web_application",
+  "facts": {
+    "ai_use": {
+      "evidence": [
+        "source content",
+        "source content"
+      ],
+      "state": "derived",
+      "value": true
+    },
+    "authentication": {
+      "evidence": [],
+      "state": "unknown",
+      "value": null
+    },
+    "browser_ui": {
+      "evidence": [
+        "index.html"
+      ],
+      "state": "derived",
+      "value": true
+    },
+    "container_use": {
+      "evidence": [],
+      "state": "derived",
+      "value": false
+    },
+    "data_sensitivity": {
+      "evidence": [
+        "Static HTML/CSS demo site with no forms, no backend, no user accounts, no data collection",
+        "v2.0.0 shop data (hours, address, reviews, offer) is explicitly placeholder/fictional per docs/project/PROJECT_BRIEF.md and prior PROJECT.md Non-Negotiables"
+      ],
+      "state": "confirmed",
+      "value": "none"
+    },
+    "database": {
+      "evidence": [],
+      "state": "derived",
+      "value": false
+    },
+    "deployment_state": {
+      "evidence": [],
+      "state": "derived",
+      "value": "not_detected"
+    },
+    "git_repository": {
+      "evidence": [
+        ".git present"
+      ],
+      "state": "derived",
+      "value": true
+    },
+    "languages": {
+      "evidence": [],
+      "state": "unknown",
+      "value": null
+    },
+    "package_manager": {
+      "evidence": [],
+      "state": "unknown",
+      "value": null
+    },
+    "project_category": {
+      "evidence": [
+        "explicit --profile selection in applied plan"
+      ],
+      "state": "confirmed",
+      "value": "web_application"
+    },
+    "public_exposure": {
+      "evidence": [
+        "GitHub repo rmz9dkfy5f-pixel/Pro-Auto-Repair-website is public",
+        "GitHub Pages site live at https://rmz9dkfy5f-pixel.github.io/Pro-Auto-Repair-website/ (public: true, confirmed via `gh api repos/.../pages`)"
+      ],
+      "state": "confirmed",
+      "value": true
+    },
+    "repository_hosting": {
+      "evidence": [
+        ".git/config"
+      ],
+      "state": "derived",
+      "value": "github"
+    },
+    "risk_level": {
+      "evidence": [
+        "No backend, no auth, no payment processing, no user data, no external dependencies",
+        "Worst case is display of placeholder demo content, not a real security or privacy exposure"
+      ],
+      "state": "confirmed",
+      "value": "low"
+    },
+    "runtime": {
+      "evidence": [],
+      "state": "unknown",
+      "value": null
+    },
+    "signals": {
+      "evidence": [
+        ".agents/skills/starter-execution-loop/skill.md",
+        "docs/governance/test_strategy.md",
+        "documents/00 core documents/09_plan_template_prompt.md",
+        "documents/01 reference documents/project-planning-stack-template/accessibility.md",
+        "documents/01 reference documents/project-planning-stack-template/architecture.md",
+        "documents/01 reference documents/project-planning-stack-template/wireframes.md",
+        "index.html",
+        "services/brakes.html",
+        "source content"
+      ],
+      "state": "derived",
+      "value": [
+        "ai",
+        "docs",
+        "html",
+        "local_ai",
+        "prompt",
+        "web"
+      ]
+    },
+    "supported_platforms": {
+      "evidence": [],
+      "state": "unknown",
+      "value": null
+    }
+  },
+  "recommendation": {
+    "ambiguous": true,
+    "confidence": "low",
+    "profile_id": "local_ai_application",
+    "ranked": [
+      {
+        "matched_signals": [
+          "ai",
+          "local_ai"
+        ],
+        "profile_id": "local_ai_application",
+        "score": 278
+      },
+      {
+        "matched_signals": [
+          "html",
+          "web"
+        ],
+        "profile_id": "web_application",
+        "score": 265
+      },
+      {
+        "matched_signals": [
+          "docs"
+        ],
+        "profile_id": "docs_only",
+        "score": 110
+      }
+    ]
+  },
+  "schema_version": "1.0"
+}
+
