@@ -1,5 +1,12 @@
 # Run First — Project Setup Controller
 
+## Status: Historical (2026-09-09)
+As of 2026-09-09 this repository uses the AntBrainOS Project Starter Kit (v3.10.0) for project
+governance and scaffolding going forward — see `docs/project/`, `docs/governance/`, `AGENTS.md`,
+and `.starter-kit/` at the repo root. This `Documents/` folder is preserved for history only, the
+same way `v0.0.1/` and `v1.0.0/` are preserved as read-only historical demo versions. Do not run
+this prompt sequence for new work; it predates and is superseded by the Starter Kit.
+
 ## Purpose
 Read this file first.
 This folder contains setup instructions for a target project repo.
