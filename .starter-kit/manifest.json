@@ -155,7 +155,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "84bb70e64142552242d45f3af00708d54d9d2a7a66cb11b898004af0bafe3b90"
+      "sha256": "854b89cd514e5db19a74ae09b8a4256303876a0ea368b765e8954ce0bbd03f9d"
     },
     {
       "modules": [],
@@ -279,7 +279,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "MIGRATION_REPORT.md",
       "profiles": [],
       "required": true,
@@ -574,3 +574,4 @@
   "schema_version": "1.0",
   "source_package": "project-starter-kit-v3.10.0"
 }
+
