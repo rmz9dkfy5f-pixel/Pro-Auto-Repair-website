@@ -39,18 +39,43 @@ etc.) — do not invent commands that were not actually found.
 Applies to Git-backed classifications (see `PROJECT_CLASSIFICATION.md`). Write `N/A — not
 Git-backed` if this repository is Vault-only or Local non-Git.
 
-- Snapshot required: no — Git history and the GitHub remote (`origin`) are this repository's only
-  backup/snapshot mechanism; no separate snapshot process exists.
-- Naming rule: N/A — no snapshot file exists. Version history is tracked via Git tags (`v0.0.1`,
-  `v1`, `v2`, `v1.2.1`) and `CHANGELOG.md`/`RELEASE_NOTES.md`.
+- Snapshot required: conditional — Git history and the GitHub remote (`origin`) are the primary
+  backup mechanism; the owner additionally maintains a manual folder-level backup at
+  `/Users/ant/WorkSync/Projects/RepoBackups/Pro Auto Repair` (see table below). No automated
+  snapshot tooling exists; updating it is a manual copy, not a scripted process.
+- Naming rule: N/A — no automated snapshot naming scheme. Version history is tracked via Git tags
+  (`v0.0.1`, `v1`, `v2`, `v1.2.1`) and `CHANGELOG.md`/`RELEASE_NOTES.md`.
   `Documents/# Snapshot Info.md` is a one-off historical stamp from the v1.2.1 release, not an
   ongoing snapshot process.
-- Exclusions: N/A — no snapshot process exists.
-- Verification method: N/A — no snapshot process exists.
-- Checksum requirement: N/A — no snapshot process exists.
-- Retention policy: N/A — Git history retention is unbounded by default; no separate policy exists.
-- Restore/rollback procedure: Use Git to check out or revert to the desired committed version or
-  tag (`git checkout <tag>`, `git revert`, or `git reset` on a dedicated branch).
+- Exclusions: N/A — no automated exclusion rules; see the "not authoritative" warning below.
+- Verification method: Confirmed 2026-09-10 by diffing the backup folder's `v0.0.1/`, `v1.0.0/`,
+  `v2.0.0/`, and root `index.html` against the live repo — byte-identical.
+- Checksum requirement: N/A — no checksum manifest exists for the backup folder.
+- Retention policy: N/A — Git history retention is unbounded by default; the manual backup folder
+  has no documented retention/rotation policy.
+- Restore/rollback procedure: Prefer Git — check out or revert to the desired committed version or
+  tag (`git checkout <tag>`, `git revert`, or `git reset` on a dedicated branch). The manual backup
+  folder is a secondary fallback only, for the reasons below.
+
+> [!warning] **The backup folder also contains unrelated, undocumented content — not project
+> history.**
+> Investigated 2026-09-10. Alongside the real, verified-identical `v0.0.1/`, `v1.0.0/`, `v2.0.0/`,
+> and root `index.html`, this folder also holds a `v3.0.0/` folder and a dozen other extra folders
+> (`graphql/`, `openapi/`, `infra/`, `monitoring/`, `security/`, `localization/`, `metrics/`,
+> `mock-server/`, `migrations/`, `tech-debt/`, `sample-data/`, `scripts/`, `docs/`) plus root
+> `ARCHITECTURE.md`/`CONTRIBUTING.md`/`LICENSE`/`ROADMAP.md` — **none of which exist in, or were
+> ever part of, the real project.**
+>
+> `v3.0.0/` is a single generic, unbranded "Atlas Auto Repair" landing-page template (fake phone
+> number, fake address, `example.com` domain, "replace this" placeholder comments) — a different
+> fictional business, not an advanced version of this site. It is never mentioned in this project's
+> own `CHANGELOG.md`, `RELEASE_NOTES.md`, or any vault continuity file. Most of the other extra
+> folders are empty stubs (e.g. `mock-server/README.md`: "No mock server is configured yet.").
+> Only `tech-debt/README.md` has real content genuinely tied to this project's actual `v1.0.0`.
+>
+> **Do not treat `v3.0.0/` or any of these extra folders as authoritative project state, a real
+> release, or a restore source.** If restoring from this backup folder, restore only
+> `v0.0.1/`/`v1.0.0/`/`v2.0.0/`/root `index.html`.
 
 ### Snapshot Destination by Machine
 
@@ -63,7 +88,7 @@ scutil --get ComputerName 2>/dev/null || hostname
 
 | Machine | Detection | Snapshot destination | Notes |
 |---|---|---|---|
-| N/A | N/A | N/A | No machine-path-dependent snapshot destination is used for this repository; Git plus the GitHub remote is the sole backup/restore mechanism. |
+| Anthony's MacBook Pro | `scutil --get ComputerName` → `Anthony's MacBook Pro` | `/Users/ant/WorkSync/Projects/RepoBackups/Pro Auto Repair` | Manual backup, not scripted. Contains unrelated extra content — see the warning above. Only `v0.0.1/`, `v1.0.0/`, `v2.0.0/`, and root `index.html` are verified/authoritative. |
 
 If the current machine does not match any row above, or more than one row could plausibly match,
 stop and ask before picking a destination — do not guess or infer a path pattern.
