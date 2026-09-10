@@ -10,6 +10,27 @@ Versioning follows the rules in [Documents/01 Reference Documents/VERSIONING.md]
 
 ---
 
+## [v1.3.0] — 2026-09-10
+
+### Added
+- Adopted the AntBrainOS Project Starter Kit v3.10.0 (`web_application` profile) for project
+  governance/scaffolding: `docs/project/`, `docs/governance/`, `AGENTS.md`, `.agents/skills/`,
+  `.starter-kit/`. See `MIGRATION_REPORT.md` for the full itemized list and every decision made
+  (66 files created, 0 conflicts).
+- Confirmed real snapshot/backup destination in `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`.
+
+### Changed
+- `Documents/` (the prior bespoke 11-prompt scaffolding system) is now historical only, marked as
+  such in its own `00_RUN_FIRST.md` — preserved unmodified, no longer the active scaffolding
+  system for this repo.
+
+### Notes
+- No runtime or demo content changed — `v0.0.1/`, `v1.0.0/`, `v2.0.0/`, `assets/`, and root
+  `index.html` are byte-for-byte unchanged by this release.
+- `validate` and `validate --release` (Starter Kit) both PASS as of this release.
+
+---
+
 ## [v1.2.1] — 2026-05-09
 
 ### Added

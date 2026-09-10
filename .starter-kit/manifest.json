@@ -155,7 +155,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "af640b18351d3e973b0fe9d07e6177e44543b73bd3a7be860e0a08fecb0b72ef"
+      "sha256": "b27294861eaf6b794a82609a37b96c0568622c9e253d40f4760b47225184962b"
     },
     {
       "modules": [],
@@ -503,7 +503,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/project/COMMIT_NOTES.md",
       "profiles": [],
       "required": true,
@@ -511,7 +511,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/project/CONTEXT.md",
       "profiles": [],
       "required": true,
@@ -519,7 +519,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/project/DECISION_LOG.md",
       "profiles": [],
       "required": true,
@@ -551,7 +551,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/project/STATUS.md",
       "profiles": [],
       "required": true,
