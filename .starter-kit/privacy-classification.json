@@ -1,6 +1,14 @@
 {
-  "data_classes": [],
-  "default_classification": "unknown",
-  "public_export_allowed": false,
+  "data_classes": [
+    {
+      "classification": "public",
+      "data_id": "placeholder_shop_data",
+      "evidence_ids": [],
+      "release_required": false
+    }
+  ],
+  "default_classification": "public",
+  "public_export_allowed": true,
   "schema_version": "1.0"
 }
+

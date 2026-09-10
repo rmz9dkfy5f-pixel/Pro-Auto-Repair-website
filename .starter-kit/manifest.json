@@ -155,7 +155,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "854b89cd514e5db19a74ae09b8a4256303876a0ea368b765e8954ce0bbd03f9d"
+      "sha256": "af640b18351d3e973b0fe9d07e6177e44543b73bd3a7be860e0a08fecb0b72ef"
     },
     {
       "modules": [],
@@ -447,7 +447,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/governance/REPOSITORY_HANDOFF_CONFIG.md",
       "profiles": [],
       "required": true,

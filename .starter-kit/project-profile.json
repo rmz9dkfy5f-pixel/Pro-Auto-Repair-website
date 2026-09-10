@@ -27,9 +27,12 @@
       "value": false
     },
     "data_sensitivity": {
-      "evidence": [],
-      "state": "unknown",
-      "value": null
+      "evidence": [
+        "Static HTML/CSS demo site with no forms, no backend, no user accounts, no data collection",
+        "v2.0.0 shop data (hours, address, reviews, offer) is explicitly placeholder/fictional per docs/project/PROJECT_BRIEF.md and prior PROJECT.md Non-Negotiables"
+      ],
+      "state": "confirmed",
+      "value": "none"
     },
     "database": {
       "evidence": [],
@@ -66,9 +69,12 @@
       "value": "web_application"
     },
     "public_exposure": {
-      "evidence": [],
-      "state": "unknown",
-      "value": null
+      "evidence": [
+        "GitHub repo rmz9dkfy5f-pixel/Pro-Auto-Repair-website is public",
+        "GitHub Pages site live at https://rmz9dkfy5f-pixel.github.io/Pro-Auto-Repair-website/ (public: true, confirmed via `gh api repos/.../pages`)"
+      ],
+      "state": "confirmed",
+      "value": true
     },
     "repository_hosting": {
       "evidence": [
@@ -78,9 +84,12 @@
       "value": "github"
     },
     "risk_level": {
-      "evidence": [],
-      "state": "unknown",
-      "value": null
+      "evidence": [
+        "No backend, no auth, no payment processing, no user data, no external dependencies",
+        "Worst case is display of placeholder demo content, not a real security or privacy exposure"
+      ],
+      "state": "confirmed",
+      "value": "low"
     },
     "runtime": {
       "evidence": [],
@@ -147,3 +156,4 @@
   },
   "schema_version": "1.0"
 }
+
