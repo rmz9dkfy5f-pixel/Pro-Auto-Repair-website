@@ -155,7 +155,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "b27294861eaf6b794a82609a37b96c0568622c9e253d40f4760b47225184962b"
+      "sha256": "d4d764b0701b7611184cb1782df6d78d39ec362fbd5494598260d845265f05c0"
     },
     {
       "modules": [],
@@ -359,7 +359,7 @@
     },
     {
       "modules": [],
-      "ownership": "starter_kit",
+      "ownership": "project",
       "path": "docs/governance/AGENT_RUN_LOG.md",
       "profiles": [],
       "required": true,
